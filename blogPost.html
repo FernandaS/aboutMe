@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html ng-app="aboutMeBlog">
+
+<head>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+
+    <title>
+        Posting Blogs
+    </title>
+</head>
+<h1>My BlOg</h1> 
+
+<body ng-controller="mainCtrl">
+
+    <div text-angular="text-angular" name="htmlcontent" ng-model="blogcontent"></div>
+
+    <button ng-click='postBlog()'>Post Blog</button>
+
+    <div ng-repeat='post in blogPosts'>
+
+        <div ng-bind-html='post.content'>{{post.content}}</div>
+
+        <button ng-click='deletePost()'>Delete Post</button>
+    </div>
+
+
+
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular-sanitize.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular.min.js'></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/parseService.js"></script>
+    <script src="js/defaultHeaders.js"></script>
+
+</body>
+
+</html>

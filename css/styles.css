@@ -24,15 +24,11 @@
 	border:3px solid white;
 }
 
-.title{
-	margin-top: 44px;
-	padding-top: 22px;
-}
 .title h1{
 	color: white;
 	text-align: center;
 	margin-bottom: 8px;
-	margin-top: -50px;
+
 }
 
 .title h3 {
@@ -83,12 +79,13 @@
 	width: 85%;
 	margin: 5% 25% 0 25%;
 	height: 40px;
+	text-align: center;
 }
 
 .nav li{
 	display: inline-block;
 	list-style-type: none;
-	list-style: none;
+/*	list-style: none;*/
 	
 
 }
